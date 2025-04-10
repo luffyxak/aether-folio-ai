@@ -25,7 +25,7 @@ const Chatbot = () => {
         {
           id: '1',
           type: 'bot',
-          text: "Hello! I'm your AI assistant powered by Gemini 2.5 Pro. I can help with digital marketing, AI trends, or answer questions about my services. What would you like to know today?",
+          text: "Hello! I'm your AI marketing assistant. I can help with digital marketing strategies, industry trends, or provide expert advice. Whether you need content ideas, platform recommendations. I'm here to support your business goals. What marketing challenge can I help you with today?",
           timestamp: new Date()
         }
       ]);
