@@ -8,7 +8,8 @@ import {
   Layers,
   Users,
   Target,
-  TrendingUp
+  TrendingUp,
+  Workflow
 } from 'lucide-react';
 import { Progress } from "@/components/ui/progress";
 
@@ -46,15 +47,6 @@ const Skills = () => {
         { name: 'A/B Testing', level: 78 },
         { name: 'Insights-Driven Decision Making', level: 85 }
       ]
-    },
-    {
-      name: 'Creative Execution',
-      icon: <Layers className="text-secondary" size={24} />,
-      skills: [
-        { name: 'Trend-Based Reels', level: 92 },
-        { name: 'Engaging Caption Writing', level: 88 },
-        { name: 'Niche Page Branding', level: 85 }
-      ]
     }
   ];
 
@@ -68,10 +60,7 @@ const Skills = () => {
     { name: 'Google Ads', icon: <Target size={20} /> },
     { name: 'PostHog', icon: <LineChart size={20} /> },
     { name: 'Google Analytics', icon: <TrendingUp size={20} /> },
-    { name: 'Chat GPT', icon: <Bot size={20} /> },
-    { name: 'Claude AI', icon: <Bot size={20} /> },
-    { name: 'Instagram', icon: <Users size={20} /> },
-    { name: 'LinkedIn', icon: <Users size={20} /> }
+    { name: 'Make.com', icon: <Workflow size={20} /> }
   ];
 
   return (
