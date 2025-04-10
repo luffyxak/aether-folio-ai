@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
@@ -76,8 +76,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-700">Email</h4>
-                    <a href="mailto:your.email@example.com" className="text-secondary hover:underline">
-                      your.email@example.com
+                    <a href="mailto:akshaymenpara17@gmail.com" className="text-secondary hover:underline">
+                      akshaymenpara17@gmail.com
                     </a>
                   </div>
                 </div>
@@ -88,8 +88,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-700">Phone</h4>
-                    <a href="tel:+12345678901" className="text-secondary hover:underline">
-                      +1 (234) 567-8901
+                    <a href="tel:+917622889233" className="text-secondary hover:underline">
+                      +91 7622889233
                     </a>
                   </div>
                 </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-gray-700">Location</h4>
                     <p className="text-gray-600">
-                      City, Country
+                      Gujarat, India
                     </p>
                   </div>
                 </div>
@@ -109,27 +109,15 @@ const Contact = () => {
 
               <div className="mt-10">
                 <h4 className="font-medium mb-4 text-gray-700">Connect With Me</h4>
-                <div className="flex space-x-4">
+                <div className="flex">
                   <a
-                    href="#"
-                    className="bg-primary hover:bg-secondary text-white h-10 w-10 rounded-full flex items-center justify-center transition-colors"
+                    href="https://linkedin.com/in/akshay-menpara-6a584317a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-blue-600 hover:bg-blue-700 text-white h-12 w-12 rounded-lg flex items-center justify-center transition-all transform hover:scale-110 shadow-md"
                     aria-label="LinkedIn"
                   >
-                    in
-                  </a>
-                  <a
-                    href="#"
-                    className="bg-primary hover:bg-secondary text-white h-10 w-10 rounded-full flex items-center justify-center transition-colors"
-                    aria-label="Twitter"
-                  >
-                    X
-                  </a>
-                  <a
-                    href="#"
-                    className="bg-primary hover:bg-secondary text-white h-10 w-10 rounded-full flex items-center justify-center transition-colors"
-                    aria-label="Instagram"
-                  >
-                    ig
+                    <Linkedin size={24} className="group-hover:animate-pulse" />
                   </a>
                 </div>
               </div>

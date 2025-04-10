@@ -23,7 +23,6 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -36,7 +35,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="text-2xl font-bold font-montserrat text-primary flex items-center">
-          Aether<span className="text-secondary">Folio</span><span className="text-sm ml-1 text-highlight">AI</span>
+          Akshay<span className="text-secondary">Menpara</span>
         </a>
 
         {/* Desktop navigation */}

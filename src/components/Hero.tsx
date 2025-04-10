@@ -8,19 +8,24 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1 animate-slide-in" style={{ animationDelay: '0.2s' }}>
+          <div className="order-2 md:order-1 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <span className="text-secondary font-medium mb-2 inline-block">Hello, I'm</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-              Digital Marketing & <span className="text-secondary">AI Solutions</span> Expert
+              Akshay <span className="text-secondary">Menpara</span>
             </h1>
+            <div className="h-1 w-20 bg-secondary mb-6"></div>
+            <h2 className="text-2xl md:text-3xl font-medium mb-6 text-primary/80">
+              Digital Marketing <span className="text-secondary">&</span> AI Integration Specialist
+            </h2>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl">
-              Elevating brands through strategic digital marketing and innovative AI-powered solutions. Transforming ideas into impactful digital experiences.
+              Merging creativity with technology to craft impactful digital strategies. Specialized in AI-powered marketing solutions and automation.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#contact" className="btn-primary">
                 Get in Touch
               </a>
-              <a href="#projects" className="btn-outline">
-                View Portfolio
+              <a href="#skills" className="btn-outline">
+                Explore My Skills
               </a>
             </div>
           </div>
@@ -29,9 +34,9 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary to-highlight rounded-full blur opacity-75"></div>
               <div className="relative bg-white rounded-full overflow-hidden h-64 w-64 md:h-80 md:w-80 border-4 border-white shadow-xl">
-                {/* Replace with your profile image when available */}
+                {/* Replace with Akshay's profile image when available */}
                 <div className="h-full w-full bg-gradient-to-br from-primary via-primary/80 to-secondary flex items-center justify-center text-white text-6xl font-bold">
-                  AF
+                  AM
                 </div>
               </div>
             </div>

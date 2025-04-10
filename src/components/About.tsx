@@ -22,16 +22,16 @@ const About = () => {
 
             <ul className="space-y-3">
               <li>
-                <span className="font-medium text-primary">Name:</span> Your Name
+                <span className="font-medium text-primary">Name:</span> Akshay Menpara
               </li>
               <li>
-                <span className="font-medium text-primary">Location:</span> City, Country
+                <span className="font-medium text-primary">Location:</span> Gujarat, India
               </li>
               <li>
-                <span className="font-medium text-primary">Email:</span> your.email@example.com
+                <span className="font-medium text-primary">Email:</span> akshaymenpara17@gmail.com
               </li>
               <li>
-                <span className="font-medium text-primary">Interests:</span> AI Technology, Digital Innovation, Marketing Analytics, Content Strategy
+                <span className="font-medium text-primary">Career Objective:</span> To build a future-ready career by merging digital marketing with AI and automation, creating intelligent, data-driven strategies.
               </li>
             </ul>
           </div>
@@ -47,14 +47,19 @@ const About = () => {
 
             <div className="space-y-6">
               <div>
-                <h4 className="font-medium">Digital Marketing Director</h4>
-                <p className="text-sm text-gray-500">Company Name • 2021 - Present</p>
-                <p className="mt-2">Leading digital marketing strategies, implementing AI-driven campaigns, and optimizing customer journeys.</p>
+                <h4 className="font-medium">Codtech IT Solutions</h4>
+                <p className="text-sm text-gray-500">Jan - Apr 2025</p>
+                <p className="mt-2">Explored key areas of digital marketing including social media marketing, SEO, and brand reputation building.</p>
               </div>
               <div>
-                <h4 className="font-medium">Marketing Specialist</h4>
-                <p className="text-sm text-gray-500">Previous Company • 2018 - 2021</p>
-                <p className="mt-2">Developed and executed comprehensive marketing campaigns across multiple channels.</p>
+                <h4 className="font-medium">IBM SkillsBuild</h4>
+                <p className="text-sm text-gray-500">Short Internship</p>
+                <p className="mt-2">Focused on learning the basics of data analytics tools, their usage, and application in marketing insights.</p>
+              </div>
+              <div>
+                <h4 className="font-medium">Instagram Page Management</h4>
+                <p className="text-sm text-gray-500">Community Building</p>
+                <p className="mt-2">Managed AI influencer page (70k+ followers) and co-founded REI Clan for content creators.</p>
               </div>
             </div>
           </div>
@@ -70,14 +75,19 @@ const About = () => {
 
             <div className="space-y-6">
               <div>
-                <h4 className="font-medium">Master's in Digital Marketing</h4>
-                <p className="text-sm text-gray-500">University Name • 2016 - 2018</p>
-                <p className="mt-2">Specialized in digital marketing strategies and analytics.</p>
+                <h4 className="font-medium">Bachelor of Information Technology</h4>
+                <p className="text-sm text-gray-500">V.V.P. Engineering College • Expected: May 2025</p>
               </div>
               <div>
-                <h4 className="font-medium">Bachelor's in Business Administration</h4>
-                <p className="text-sm text-gray-500">University Name • 2012 - 2016</p>
-                <p className="mt-2">Focused on marketing and business strategy.</p>
+                <h4 className="font-medium">Google Digital Marketing & E-commerce</h4>
+                <p className="text-sm text-gray-500">Coursera Certificate</p>
+                <p className="mt-2">
+                  <a href="#" className="text-secondary hover:underline">View Certificate</a>
+                </p>
+              </div>
+              <div>
+                <h4 className="font-medium">IBM SkillsBuild - Data Analytics</h4>
+                <p className="text-sm text-gray-500">Certificate</p>
               </div>
             </div>
           </div>
@@ -86,10 +96,10 @@ const About = () => {
         <div className="mt-16 bg-primary/5 p-8 rounded-lg border border-primary/10">
           <h3 className="text-xl font-semibold mb-4 text-primary">My Approach</h3>
           <p className="mb-4">
-            I blend traditional marketing principles with cutting-edge AI technologies to create data-driven strategies that deliver measurable results. My expertise lies in identifying opportunities for digital transformation and implementing solutions that enhance both user experience and business outcomes.
+            I'm an under graduating student from V.V.P. Engineering College with a strong passion for integrating AI, automation, and creativity into digital marketing. I love exploring how technology can make marketing smarter, faster, and more engaging.
           </p>
           <p>
-            Whether it's developing comprehensive marketing campaigns, optimizing conversion funnels, or leveraging AI to personalize customer interactions, I'm passionate about driving growth through innovative digital strategies.
+            My enthusiasm lies in exploring new trends, automating marketing processes, and using AI to boost content creativity and performance. I'm always eager to learn and innovate in the ever-evolving digital space.
           </p>
         </div>
       </div>
