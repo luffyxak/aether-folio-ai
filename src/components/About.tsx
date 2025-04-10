@@ -82,7 +82,7 @@ const About = () => {
                 <h4 className="font-medium">Google Digital Marketing & E-commerce</h4>
                 <p className="text-sm text-gray-500">Coursera Certificate</p>
                 <p className="mt-2">
-                  <a href="#" className="text-secondary hover:underline">View Certificate</a>
+                  <a href="https://coursera.org/share/6e7515b9470f0d593ff2cdbdc1c0d789" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">View Certificate</a>
                 </p>
               </div>
               <div>
