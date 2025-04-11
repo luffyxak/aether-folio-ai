@@ -12,6 +12,7 @@ import {
   Workflow
 } from 'lucide-react';
 import { Progress } from "@/components/ui/progress";
+import { Badge } from "@/components/ui/badge";
 
 const Skills = () => {
   // Define skill categories
@@ -64,64 +65,85 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding bg-neutral">
-      <div className="container mx-auto">
-        <h2 className="section-title text-center">Skills & Expertise</h2>
-        <p className="section-subtitle text-center">
-          Specialized in digital marketing with a focus on AI integration and automation
-        </p>
+    <section id="skills" className="py-24 px-6 bg-gradient-to-b from-white to-neutral/50 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyQTQzNjUiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHpNNDIgMmgxdjRoLTF2LTR6bTItMmgxdjRoLTF2LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
+      <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-white to-transparent"></div>
+      
+      <div className="container mx-auto max-w-7xl relative z-10">
+        <div className="text-center mb-16">
+          <span className="inline-block text-secondary font-semibold mb-3 text-lg tracking-wide relative">
+            <span className="absolute -left-6 top-1/2 transform -translate-y-1/2 w-4 h-[2px] bg-secondary"></span>
+            What I Do
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+            Skills & Expertise
+          </h2>
+          <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Specialized in digital marketing with a focus on AI integration and automation
+          </p>
+        </div>
 
         {/* Skills Categories Tabs */}
         <div className="flex flex-wrap justify-center mb-12 gap-4">
           {categories.map((category) => (
             <button
               key={category.name}
-              className={`flex items-center px-6 py-3 rounded-full transition-all ${
+              className={`flex items-center px-8 py-4 rounded-xl transition-all ${
                 activeCategory === category.name
-                  ? 'bg-primary text-white shadow-md'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
+                  ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg'
+                  : 'bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white hover:shadow-md border border-gray-100'
               }`}
               onClick={() => setActiveCategory(category.name)}
             >
-              <span className="mr-2">{category.icon}</span>
+              <span className="mr-3">{category.icon}</span>
               {category.name}
             </button>
           ))}
         </div>
 
         {/* Skills Progress Bars */}
-        <div className="bg-white rounded-xl p-8 shadow-md">
-          <div className="flex items-center mb-6">
-            {categories.find(cat => cat.name === activeCategory)?.icon}
-            <h3 className="text-xl font-semibold ml-2">{activeCategory}</h3>
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-10 shadow-lg border border-gray-100">
+          <div className="flex items-center mb-8">
+            <div className="bg-gradient-to-br from-secondary/20 to-secondary/5 p-4 rounded-xl mr-4">
+              {categories.find(cat => cat.name === activeCategory)?.icon}
+            </div>
+            <h3 className="text-2xl font-bold text-primary">{activeCategory}</h3>
           </div>
 
-          <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
             {activeSkills.map((skill) => (
               <div key={skill.name} className="animate-fade-in">
-                <div className="flex justify-between mb-2">
-                  <span className="font-medium">{skill.name}</span>
-                  <span className="text-secondary">{skill.level}%</span>
+                <div className="flex justify-between mb-3">
+                  <span className="font-medium text-gray-800">{skill.name}</span>
+                  <Badge variant="outline" className="bg-secondary/10 text-secondary border-secondary/20">
+                    {skill.level}%
+                  </Badge>
                 </div>
-                <Progress value={skill.level} className="h-2" />
+                <div className="relative h-3 w-full bg-gray-100 rounded-full overflow-hidden">
+                  <div 
+                    className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
+                    style={{ width: `${skill.level}%` }}
+                  />
+                </div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Tools & Technologies */}
-        <div className="mt-16">
-          <h3 className="text-xl font-bold mb-8 text-center">Tools & Technologies</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div className="mt-20">
+          <h3 className="text-2xl font-bold mb-10 text-center text-primary">Tools & Technologies</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {tools.map((tool) => (
               <div
                 key={tool.name}
-                className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="flex flex-col items-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-100 group hover:-translate-y-1"
               >
-                <div className="bg-primary/10 p-2 rounded-md mr-3">
+                <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-4 rounded-xl mb-4 group-hover:scale-110 transition-transform">
                   {tool.icon}
                 </div>
-                <span>{tool.name}</span>
+                <span className="font-medium text-gray-700 text-center">{tool.name}</span>
               </div>
             ))}
           </div>

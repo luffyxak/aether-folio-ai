@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Send, Linkedin } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
+import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -56,30 +57,37 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-neutral">
-      <div className="container mx-auto">
-        <h2 className="section-title text-center">Get In Touch</h2>
-        <p className="section-subtitle text-center">
-          Let's discuss how we can work together to achieve your digital marketing goals
-        </p>
+    <section id="contact" className="py-24 px-6 bg-gradient-to-b from-neutral to-white relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyQTQzNjUiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHpNNDIgMmgxdjRoLTF2LTR6bTItMmgxdjRoLTF2LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-50"></div>
+      
+      <div className="container mx-auto max-w-7xl relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+            Let's Connect
+          </h2>
+          <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Ready to elevate your digital marketing strategy? Let's discuss how we can achieve your business goals together.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
           {/* Contact Information */}
           <div className="lg:col-span-1">
-            <div className="bg-white p-8 rounded-lg shadow-md h-full">
-              <h3 className="text-xl font-semibold mb-6 text-primary">Contact Information</h3>
+            <div className="bg-white backdrop-blur-sm bg-opacity-70 p-10 rounded-2xl shadow-lg transform hover:translate-y-[-5px] transition-all duration-300 border border-gray-100">
+              <h3 className="text-2xl font-bold mb-8 text-primary">Get in touch</h3>
               
               <div className="mt-10">
-                <h4 className="font-medium mb-4 text-gray-700">Connect With Me</h4>
+                <h4 className="font-medium mb-6 text-gray-700">Connect With Me</h4>
                 <div className="flex">
                   <a
                     href="https://linkedin.com/in/akshay-menpara-6a584317a"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group bg-blue-600 hover:bg-blue-700 text-white h-12 w-12 rounded-lg flex items-center justify-center transition-all transform hover:scale-110 shadow-md"
+                    className="group bg-gradient-to-br from-blue-500 to-blue-700 text-white h-14 w-14 rounded-xl flex items-center justify-center transition-all transform hover:-translate-y-1 hover:shadow-lg"
                     aria-label="LinkedIn"
                   >
-                    <Linkedin size={24} className="group-hover:animate-pulse" />
+                    <Linkedin size={26} className="group-hover:scale-110 transition-transform" />
                   </a>
                 </div>
               </div>
@@ -88,10 +96,10 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">
+            <form onSubmit={handleSubmit} className="bg-white backdrop-blur-sm bg-opacity-70 p-10 rounded-2xl shadow-lg border border-gray-100">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div className="space-y-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                     Your Name
                   </label>
                   <input
@@ -100,13 +108,13 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+                    className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent bg-white/50 backdrop-blur-sm transition-all"
                     placeholder="John Doe"
                     required
                   />
                 </div>
-                <div>
-                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">
+                <div className="space-y-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Your Email
                   </label>
                   <input
@@ -115,15 +123,15 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+                    className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent bg-white/50 backdrop-blur-sm transition-all"
                     placeholder="john@example.com"
                     required
                   />
                 </div>
               </div>
 
-              <div className="mb-6">
-                <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-700">
+              <div className="mb-8">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                   Subject
                 </label>
                 <input
@@ -132,14 +140,14 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+                  className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent bg-white/50 backdrop-blur-sm transition-all"
                   placeholder="How can I help you?"
                   required
                 />
               </div>
 
-              <div className="mb-6">
-                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700">
+              <div className="mb-8">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   Message
                 </label>
                 <textarea
@@ -147,26 +155,26 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
-                  placeholder="Your message here..."
+                  rows={6}
+                  className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent bg-white/50 backdrop-blur-sm transition-all resize-none"
+                  placeholder="Tell me about your project or inquiry..."
                   required
                 ></textarea>
               </div>
 
-              <button
+              <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn-primary flex items-center justify-center w-full md:w-auto"
+                className="w-full md:w-auto px-8 py-6 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-xl hover:shadow-lg transition-all text-lg flex items-center justify-center gap-2 hover:-translate-y-1"
               >
                 {isSubmitting ? (
                   'Sending...'
                 ) : (
                   <>
-                    Send Message <Send size={16} className="ml-2" />
+                    Send Message <Send size={18} className="ml-1" />
                   </>
                 )}
-              </button>
+              </Button>
             </form>
           </div>
         </div>
