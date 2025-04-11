@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Send, Linkedin } from 'lucide-react';
+import { Send, Linkedin, Phone } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
 
@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 bg-gradient-to-b from-neutral to-white relative overflow-hidden">
+    <section id="contact" className="py-24 px-6 bg-gradient-to-b from-softBlue/40 to-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyQTQzNjUiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHpNNDIgMmgxdjRoLTF2LTR6bTItMmgxdjRoLTF2LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-50"></div>
       
       <div className="container mx-auto max-w-7xl relative z-10">
@@ -79,7 +79,7 @@ const Contact = () => {
               
               <div className="mt-10">
                 <h4 className="font-medium mb-6 text-gray-700">Connect With Me</h4>
-                <div className="flex">
+                <div className="flex space-x-4">
                   <a
                     href="https://linkedin.com/in/akshay-menpara-6a584317a"
                     target="_blank"
@@ -88,6 +88,14 @@ const Contact = () => {
                     aria-label="LinkedIn"
                   >
                     <Linkedin size={26} className="group-hover:scale-110 transition-transform" />
+                  </a>
+                  
+                  <a
+                    href="tel:+917622889233"
+                    className="group bg-gradient-to-br from-green-500 to-teal-600 text-white h-14 w-14 rounded-xl flex items-center justify-center transition-all transform hover:-translate-y-1 hover:shadow-lg"
+                    aria-label="Call"
+                  >
+                    <Phone size={26} className="group-hover:scale-110 transition-transform" />
                   </a>
                 </div>
               </div>

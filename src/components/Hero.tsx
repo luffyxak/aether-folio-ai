@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative pt-20 bg-gradient-to-br from-white via-neutral to-white overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative pt-20 bg-gradient-to-br from-white via-softBlue/20 to-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyQTQzNjUiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHpNNDIgMmgxdjRoLTF2LTR6bTItMmgxdjRoLTF2LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
       
       <div className="absolute top-20 left-0 w-full h-80 bg-gradient-to-b from-white to-transparent"></div>
@@ -56,8 +56,8 @@ const Hero = () => {
           <div className="order-1 md:order-2 flex justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <div className="relative">
               {/* Abstract decorative elements */}
-              <div className="absolute -top-16 -right-16 w-32 h-32 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
-              <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-secondary/20 rounded-full blur-lg"></div>
+              <div className="absolute -top-16 -right-16 w-32 h-32 bg-softPurple rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-softYellow rounded-full blur-lg"></div>
               
               {/* Profile image container */}
               <div className="relative">

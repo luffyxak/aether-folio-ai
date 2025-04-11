@@ -26,14 +26,19 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#0D3B66', // Deeper blue
+					DEFAULT: '#6366F1', // Indigo
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: '#F26419', // Vibrant orange
+					DEFAULT: '#F59E0B', // Amber
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
-				highlight: '#59C3C3', // Teal accent
+				highlight: '#38BDF8', // Sky blue
+				softPink: '#FDE1D3',    // Soft pink/peach
+				softPurple: '#E5DEFF',  // Soft purple
+				softBlue: '#D3E4FD',    // Soft blue
+				softGreen: '#F2FCE2',   // Soft green
+				softYellow: '#FEF7CD',  // Soft yellow
 				neutral: '#F7FAFC', // Light gray
 				textDark: '#1A202C', // Dark gray
 				destructive: {
@@ -122,7 +127,7 @@ export default {
 			},
 			boxShadow: {
 				'soft': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01)',
-				'glow': '0 0 15px rgba(89, 195, 195, 0.5)'
+				'glow': '0 0 15px rgba(99, 102, 241, 0.5)'
 			}
 		}
 	},

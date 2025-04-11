@@ -1,5 +1,5 @@
 
-import { ChevronRight, Linkedin, ArrowUp } from 'lucide-react';
+import { ChevronRight, Linkedin, ArrowUp, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -23,16 +23,25 @@ const Footer = () => {
             <p className="mb-6 text-gray-300 leading-relaxed">
               Digital marketing specialist with expertise in AI integration, automation, and creative marketing strategies.
             </p>
-            <div className="flex">
+            <div className="flex space-x-3">
               <a 
                 href="https://linkedin.com/in/akshay-menpara-6a584317a" 
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn" 
-                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm px-5 py-3 rounded-xl transition-all border border-white/10 group"
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-2 rounded-xl transition-all border border-white/10 group"
               >
                 <Linkedin size={18} className="group-hover:scale-110 transition-transform" />
-                <span>Connect on LinkedIn</span>
+                <span>LinkedIn</span>
+              </a>
+              
+              <a 
+                href="tel:+917622889233" 
+                aria-label="Call" 
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-2 rounded-xl transition-all border border-white/10 group"
+              >
+                <Phone size={18} className="group-hover:scale-110 transition-transform" />
+                <span>Call</span>
               </a>
             </div>
           </div>
