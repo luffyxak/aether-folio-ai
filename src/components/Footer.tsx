@@ -1,19 +1,26 @@
 
-import { ChevronRight, Linkedin } from 'lucide-react';
+import { ChevronRight, Linkedin, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
-    <footer className="bg-gradient-to-br from-primary to-primary/90 text-white pt-20 pb-8 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-primary to-primary/90 text-white pt-16 pb-6 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHpNNDIgMmgxdjRoLTF2LTR6bTItMmgxdjRoLTF2LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40 mix-blend-overlay"></div>
       
-      <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-16">
+      <div className="container mx-auto px-6 relative z-10 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-6">Akshay<span className="text-secondary">Menpara</span></h3>
-            <p className="mb-8 text-gray-300 leading-relaxed">
+            <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">AM</h3>
+            <p className="mb-6 text-gray-300 leading-relaxed">
               Digital marketing specialist with expertise in AI integration, automation, and creative marketing strategies.
             </p>
             <div className="flex">
@@ -32,8 +39,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6 border-b border-white/10 pb-3">Quick Links</h3>
-            <ul className="space-y-4">
+            <h3 className="text-xl font-bold mb-5 border-b border-white/10 pb-3">Quick Links</h3>
+            <ul className="space-y-3">
               {['Home', 'About', 'Skills', 'Contact'].map((link) => (
                 <li key={link}>
                   <a 
@@ -50,8 +57,8 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-bold mb-6 border-b border-white/10 pb-3">Services</h3>
-            <ul className="space-y-4">
+            <h3 className="text-xl font-bold mb-5 border-b border-white/10 pb-3">Services</h3>
+            <ul className="space-y-3">
               {[
                 'Digital Marketing', 
                 'Social Media Strategy', 
@@ -73,8 +80,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 mt-8 text-center text-gray-400 text-sm">
-          <p>© {currentYear} Akshay Menpara. All rights reserved.</p>
+        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+          <p>© {currentYear} AM. All rights reserved.</p>
+          
+          <button 
+            onClick={scrollToTop}
+            className="mt-4 md:mt-0 bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all"
+            aria-label="Scroll to top"
+          >
+            <ArrowUp size={18} />
+          </button>
         </div>
       </div>
     </footer>

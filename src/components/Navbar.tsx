@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/80 backdrop-blur-md py-3 shadow-lg' 
+          ? 'bg-white/70 backdrop-blur-xl py-3 shadow-lg' 
           : 'bg-transparent py-5'
       }`}
     >
@@ -42,7 +42,6 @@ const Navbar = () => {
           className="text-2xl font-bold font-montserrat text-primary flex items-center group"
         >
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent group-hover:scale-105 transition-transform inline-block">AM</span>
-          <span className="ml-2">Akshay<span className="text-secondary">Menpara</span></span>
         </a>
 
         {/* Desktop navigation */}

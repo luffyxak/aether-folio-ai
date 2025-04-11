@@ -7,8 +7,11 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-20 bg-gradient-to-br from-white via-neutral to-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyQTQzNjUiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHptMi0yaDF2NGgtMXYtNHpNNDIgMmgxdjRoLTF2LTR6bTItMmgxdjRoLTF2LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
       
+      <div className="absolute top-20 left-0 w-full h-80 bg-gradient-to-b from-white to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent"></div>
+      
       <div className="container mx-auto px-6 z-10 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="order-2 md:order-1 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-20 h-20 bg-secondary/10 rounded-full blur-xl"></div>
@@ -20,7 +23,7 @@ const Hero = () => {
               </span>
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
-                Akshay <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Menpara</span>
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">AM</span>
               </h1>
               
               <h2 className="text-2xl md:text-3xl font-medium mb-8 text-gray-700 tracking-tight">
@@ -59,8 +62,8 @@ const Hero = () => {
               {/* Profile image container */}
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-br from-primary via-secondary to-highlight rounded-full blur opacity-75 animate-pulse" style={{ animationDuration: '4s' }}></div>
-                <div className="relative bg-white rounded-full overflow-hidden h-80 w-80 md:h-96 md:w-96 border-4 border-white shadow-2xl">
-                  {/* Replace with Akshay's profile image when available */}
+                <div className="relative bg-white rounded-full overflow-hidden h-72 w-72 md:h-80 md:w-80 border-4 border-white shadow-2xl">
+                  {/* AM logo */}
                   <div className="h-full w-full bg-gradient-to-br from-primary via-primary/80 to-secondary flex items-center justify-center text-white text-8xl font-bold">
                     AM
                   </div>
@@ -68,7 +71,7 @@ const Hero = () => {
               </div>
               
               {/* Tech decoration elements */}
-              <div className="absolute top-10 -right-10 w-20 h-20 bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg flex items-center justify-center border border-white">
+              <div className="absolute top-10 -right-10 w-20 h-20 bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg flex items-center justify-center border border-white rotate-6">
                 <div className="text-primary font-semibold">AI</div>
               </div>
               <div className="absolute -bottom-5 -left-5 w-24 h-24 bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg flex items-center justify-center border border-white rotate-12">
