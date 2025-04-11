@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Send, Linkedin, Phone } from 'lucide-react';
+import { Send, Linkedin, Phone, Mail } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
 
@@ -96,6 +96,14 @@ const Contact = () => {
                     aria-label="Call"
                   >
                     <Phone size={26} className="group-hover:scale-110 transition-transform" />
+                  </a>
+                  
+                  <a
+                    href="mailto:akshaymenpara0@gmail.com"
+                    className="group bg-gradient-to-br from-primary to-highlight text-white h-14 w-14 rounded-xl flex items-center justify-center transition-all transform hover:-translate-y-1 hover:shadow-lg"
+                    aria-label="Email"
+                  >
+                    <Mail size={26} className="group-hover:scale-110 transition-transform" />
                   </a>
                 </div>
               </div>

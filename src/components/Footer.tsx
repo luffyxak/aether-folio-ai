@@ -1,5 +1,5 @@
 
-import { ChevronRight, Linkedin, ArrowUp, Phone } from 'lucide-react';
+import { ChevronRight, Linkedin, ArrowUp, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,6 +42,15 @@ const Footer = () => {
               >
                 <Phone size={18} className="group-hover:scale-110 transition-transform" />
                 <span>Call</span>
+              </a>
+              
+              <a 
+                href="mailto:akshaymenpara0@gmail.com" 
+                aria-label="Email" 
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-2 rounded-xl transition-all border border-white/10 group"
+              >
+                <Mail size={18} className="group-hover:scale-110 transition-transform" />
+                <span>Email</span>
               </a>
             </div>
           </div>

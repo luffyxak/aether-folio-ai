@@ -26,14 +26,14 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#6366F1', // Indigo
+					DEFAULT: '#33C3F0', // Sky Blue
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: '#F59E0B', // Amber
+					DEFAULT: '#4ECDC4', // Teal accent
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
-				highlight: '#38BDF8', // Sky blue
+				highlight: '#8BE9FD', // Lighter sky blue
 				softPink: '#FDE1D3',    // Soft pink/peach
 				softPurple: '#E5DEFF',  // Soft purple
 				softBlue: '#D3E4FD',    // Soft blue
