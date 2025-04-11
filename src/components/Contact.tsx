@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin } from 'lucide-react';
+import { Send, Linkedin } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
@@ -69,44 +69,6 @@ const Contact = () => {
             <div className="bg-white p-8 rounded-lg shadow-md h-full">
               <h3 className="text-xl font-semibold mb-6 text-primary">Contact Information</h3>
               
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-secondary/10 p-3 rounded-full mr-4">
-                    <Mail size={20} className="text-secondary" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-gray-700">Email</h4>
-                    <a href="mailto:akshaymenpara17@gmail.com" className="text-secondary hover:underline">
-                      akshaymenpara17@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-secondary/10 p-3 rounded-full mr-4">
-                    <Phone size={20} className="text-secondary" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-gray-700">Phone</h4>
-                    <a href="tel:+917622889233" className="text-secondary hover:underline">
-                      +91 7622889233
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-secondary/10 p-3 rounded-full mr-4">
-                    <MapPin size={20} className="text-secondary" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-gray-700">Location</h4>
-                    <p className="text-gray-600">
-                      Gujarat, India
-                    </p>
-                  </div>
-                </div>
-              </div>
-
               <div className="mt-10">
                 <h4 className="font-medium mb-4 text-gray-700">Connect With Me</h4>
                 <div className="flex">
